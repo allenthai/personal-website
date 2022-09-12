@@ -58,7 +58,7 @@ h3{
 
 .skill-row{
     width: 50%;
-    margin: 100px auto 100px auto;
+    margin: 100px auto 200px auto;
     text-align: left;
 }
 
@@ -85,7 +85,7 @@ h3{
 }
 
 .python{
-    width: 25%;
+    width: 20%;
     float: left;        /*float left will put the text onto the left of the image, it wraps text around a certain element. if you want to put text undernath the image, you can use clear to clear the float on the text only (use a class to target the text)*/
     margin-right: 30px;
 }
