@@ -1,0 +1,145 @@
+.top-container{
+    background-color: #E4F9F5;
+    position: relative;     /*the parent has to have its position set to relative, otherwise the children elements will have its position set relative to the body*/
+    padding-top: 50px;
+}
+
+.middle-container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.bottom-container{
+    background-color: #66BFBF;
+    padding: 50px 0 20px;
+}
+
+body{
+    margin: 0;
+    color: #40514E;
+    text-align: center;     /*text-align center will center everything that doesn't have a width set*/
+    font-family: "Merriweather", serif;       /*if it does have a width set, have to use margin: auto*/
+}
+
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    width: 5%;
+    border-color: grey;
+    border-width: 5px;
+    margin: 100px auto;
+}
+
+p{
+    line-height: 2;
+}
+
+h1{
+    margin-top: 50px auto 0 auto;           /*margin goes from top, right, bottom, left. auto just means auto-center*/
+    font-family: "Sacramento", cursive;     /*can also just use a standard font like "Arial" which most users will have. the format is font, then font family. can also list multiple fonts as backups*/
+    font-size: 5.625rem;                        /*can use a percentage for font size so that if the user scales their web browser default font size, it will scale with it*/
+    color: #66BFBF;
+    /*16px = 100% = 1em, can use % or em to change fonts dynamically*/
+    /*rem will not be affected by font size changes earlier in the code. rem is recommended*/
+}
+
+h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: #66BFBF;
+    padding-bottom: 8px;
+}
+
+h3{
+    font-family: "Montserrat", sans-serif;
+    color: #11999E;
+}
+
+.skill-row{
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+}
+
+.intro{
+    width: 30%;
+    margin: auto;
+}
+
+.top-cloud{
+    position: absolute;
+    right: 300px;           /*these are relative to its parent, top-container*/
+    top: 50px;
+   margin-top: 300px;
+}
+
+.bottom-cloud{
+    position: absolute;
+    left: 300px;            /*these are relative to its parent, top-container*/
+    bottom: 300px;
+}
+
+.boy{
+    width: 25%;
+}
+
+.python{
+    width: 25%;
+    float: left;        /*float left will put the text onto the left of the image, it wraps text around a certain element. if you want to put text undernath the image, you can use clear to clear the float on the text only (use a class to target the text)*/
+    margin-right: 30px;
+}
+
+.rockets{
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+
+.contact-message{
+    width=40%
+    margin: 40px auto 60px;     /*40 from top, auto left and right, 60 from bottom*/
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+a{
+    color: #11999E;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #EAF6F6
+}
+
+.copyright{
+    color: #EAF6F6;
+    font-size: 0.75rem;
+    padding: 20px 0 20px 0;
+}
